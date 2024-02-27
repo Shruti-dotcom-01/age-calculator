@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:cursive;
+}
+
+.container{
+    display:flex;
+    width:500px;
+    margin:auto;
+    margin-top:10%;
+    margin-bottom:10%;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color:rgb(206, 202, 232);
+    box-shadow:8px 8px black;
+    color:rgb(71, 66, 66);
+    padding:5% 0%;
+}
+
+#currDate{
+    font-size:40px;
+    margin:20px;
+    font-weight:bold;
+}
+
+input{
+    font-size:20px;
+    padding:15px;
+    margin:20px;
+    text-align:center;
+    border-radius:20px;
+    border:1px solid rgb(156, 156, 108);
+    cursor:pointer;
+}
+
+button{
+    font-size:20px;
+    padding:10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color:rgba(240, 41, 41, 0.611);
+    color:black;
+    margin:20px;
+    text-transform: uppercase;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:white;
+    color:blue;
+}
+
+#displayAge{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:500px;
+    height:400px;
+    background-color:rgb(237, 113, 144);
+    border-radius:30px;
+    position:absolute;
+    top:19%;
+    left:30%;
+    visibility: hidden;
+}
+
+#age{
+    color:rgb(78, 70, 70);
+    font-size:50px;
+    margin:20px;
+    font-weight:bold;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        width:300px;
+       
+    }
+
+    #displayAge{
+        width: 50%;
+        height:350px;
+    }
+}
